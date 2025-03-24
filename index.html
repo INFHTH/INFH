@@ -10,6 +10,19 @@
             height: 100%;
             overflow: hidden;
         }
+        #logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 100px;
+            max-height: 100px;
+            z-index: 10;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+        #logo:hover {
+            opacity: 1;
+        }
         #proxy-frame {
             width: 100%;
             height: 100%;
@@ -18,6 +31,7 @@
     </style>
 </head>
 <body>
+    <img id="logo" src="https://imgur.com/KHPlZct.png" alt="INFH Logo">
     <iframe id="proxy-frame" src="https://script.google.com/a/~/macros/s/AKfycbyaVXeDOUaMg3YRw1VhrwEzMTqG2afdt7OD061b47ow0X67EpMQiLjItxFH_POh9WSBGg/exec"></iframe>
 </body>
 </html>
